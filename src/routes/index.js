@@ -1,4 +1,5 @@
 import AuthLayOut from "../components/layout";
+import ForgotPassword from "../pages/ForgotPassword";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: App } = require("../App");
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "password",
                 element: <AuthLayOut><CheckPasswordPage /></AuthLayOut>
+            },
+            {
+                path: "forgot-password",
+                element: <AuthLayOut><ForgotPassword /></AuthLayOut>
             },
             {
                 path: "",
